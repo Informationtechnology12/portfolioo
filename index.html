@@ -1,150 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header class="MainHeader">
-        <div class="container MainNav">
-            <a href="#" class="logo">Deep Mehwala</a>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="title">Sakshi Shinde</h1>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#hobbies" class="nav-link">Hobbies</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h2>Hello — I'm Sakshi Shinde</h2>
+        <p class="lead">BE in Information Technology • Web Developer (student) • Problem-solver</p>
+        <p>I build responsive websites and enjoy learning full-stack development. This portfolio shows my skills, projects, and contact details.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="C:\Users\Sakshi\OneDrive\Desktop\Wd prac\girl.jpg" alt="Profile picture" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <div class="about-left">
         </div>
-    </header>
+        <div class="about-right">
+          <p><strong>Name:</strong> Sakshi</p>
+          <p><strong>Major:</strong> BE in Information Technology</p>
+          <p><strong>Background:</strong> I am currently pursuing my college degree in Information Technology and eager to expand my knowledge in the field of Cybersecurity.</p>
+          <p>I am passionate HTML, CSS, JavaScript, and Node.js, along with database management. I also possess skills in UI/UX design to create user-friendly and engaging web experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section class="Home" id="home">
-            <div class="containers">
-                <h1>Software Developer </h1>
-                <p>Welcome to my digital space. I build innovative mobile and web applications with a focus on clean
-                    code and user-centric design.</p>
-                <p>Love to work on Kali Linux and Excited to work on the Cyber Security Projects</p>
-                <a href="#portfolio" class="btn">View My Work</a>
-            </div>
-        </section>
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Technical</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Frameworks / Tools</h4>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>VS Code</li>
+            <li>Bootstrap / Tailwind (basic)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Soft Skills</h4>
+          <ul>
+            <li>Problem-solving</li>
+            <li>Teamwork</li>
+            <li>Time Management</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="About" id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <!--<div class="about-content">
-                    <img src="images/abtimg.JPG" alt="A professional headshot of Your Name">
-                </div>
-                <div class="right-side">
-                        <h3>Who I Am</h3>
-                        <p>I am a passionate Computer Science student from India with a strong interest in mobile app development using Flutter. My goal is to create applications that are not only functional but also intuitive and beautiful.</p>
-                        <p>Currently, I'm diving deep into web fundamentals and building projects like a Flutter component library to sharpen my skills. I thrive on solving complex problems and turning ideas into tangible products.</p>
-                </div>-->
-                <div class="container-inner">
-                    <div class="left-container">
-                        <img src="images/abtimg.JPG" alt="A professional headshot of Your Name">
-                    </div>
+  <section id="hobbies" class="section hobbies">
+    <div class="container">
+      <h3 class="section-title">Hobbies & Achievements</h3>
+      <div class="hobbies-list">
+        <ul>
+          <li>Pencil sketching</li>
+          <li>Coding</li>
+          <li>UI/UX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-                    <div class="right-container">
-                        <h3>Who I Am</h3>
-                        <p>I am a passionate Computer Science student from India with a strong interest in mobile app
-                            development using Flutter. My goal is to create applications that are not only functional
-                            but also intuitive and beautiful.</p>
-                        <p>Currently, I'm diving deep into web fundamentals and building projects like a Flutter
-                            component library to sharpen my skills. I thrive on solving complex problems and turning
-                            ideas into tangible products.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h3 class="section-title">Contact</h3>
 
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:sakshinde@gmail.com">sakshinde@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91 9865438765</p>
+          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">My Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">Flutter</div>
-                    <div class="skill-item">Dart</div>
-                    <div class="skill-item">Java</div>
-                    <div class="skill-item">HTML5</div>
-                    <div class="skill-item">CSS3</div>
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">MongoDb</div>
-                    <div class="skill-item">Node J.S</div>
-                    <div class="skill-item">UI/UX Design</div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2 class="section-title">My Portfolio</h2>
-                <div class="container-inner-port">
-                    <div class="cards">
-                        <img src="images/card1.jpg" width="100%" height="50%" alt="Screenshot of Flutter Component Hub">
-                        <div class="project-content">
-                            <h3>Flutter Component Hub</h3>
-                            <p>A web-based library of industrial-grade Flutter UI components, designed for easy
-                                copy-paste implementation. Built to streamline development for Flutter programmers.</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <img src="images/rcs.png" width="100%" height="50%" alt="Screenshot of Flutter Component Hub">
-                        <div class="project-content">
-                            <h3>Right Click Solutions</h3>
-                            <p>A web-based library of industrial-grade Flutter UI components, designed for easy
-                                copy-paste implementation. Built to streamline development for Flutter programmers.</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <img src="images/bus.jpg" width="100%" height="50%" alt="Screenshot of Flutter Component Hub">
-                        <div class="project-content">
-                            <h3>Where is My Bus</h3>
-                            <p>A web-based library of industrial-grade Flutter UI components, designed for easy
-                                copy-paste implementation. Built to streamline development for Flutter programmers.</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-info">
-                    <p>I'm currently seeking new opportunities and am open to collaboration. Feel free to reach out!</p>
-                    <p>Email: <a href="mailto:deepmehwala@gmail.com">deepmehwala@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-     <footer class="main-footer">
-        <p>&copy; 2025 Deep Mehwala. All Rights Reserved.</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sakshi Shinde — All rights reserved.</p>
+    </div>
+  </footer>
 </body>
-
 </html>
